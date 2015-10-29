@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="starter">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+   <script src="lib/jquery-1.11.3.min.js"></script>
+   <script src="lib/jquery-migrate-1.2.1.min.js"></script>
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+      <script src="js/app.js"></script>
+      <script src="js/services/cityAPIService.js"></script>
+      <script src="js/config/config.js"></script>
+      <script src="js/controller.js"></script>
+  </head>
+  
+  <ion-content id="content">
+  <body ng-controller="ControllerInit" >  
+         <div class="pageLogo" >                     
+         <ion-nav-view name="city">                  
+             </ion-nav-view>                                            
+         </div>                 
+  </body>
+  </ion-content>
+  
+</html>
