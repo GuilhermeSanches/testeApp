@@ -20,20 +20,15 @@
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
-    <!-- your app's js -->
+    <!-- your app's js -->      
       <script src="js/app.js"></script>
       <script src="js/services/cityAPIService.js"></script>
       <script src="js/config/config.js"></script>
-      <script src="js/controller.js"></script>
+      <script src="js/controllers.js"></script>
   </head>
-  
-  <ion-content id="content">
-  <body ng-controller="ControllerInit" >  
-         <div class="pageLogo" >                     
-         <ion-nav-view name="city">                  
-             </ion-nav-view>                                            
-         </div>                 
+  <body>             
+         <div class="pageLogo" ng-controller="CTRL">                                
+                <div ng-include="template_select.url" ng-controller="ControllerInit"></div>                            
+         </div>                  
   </body>
-  </ion-content>
-  
 </html>

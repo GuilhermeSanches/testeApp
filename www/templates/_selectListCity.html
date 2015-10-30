@@ -1,0 +1,6 @@
+<ion-view view-title="selecao" class="class-panel-select" ng-controller="CtrlDevice">           
+    <select  id="listCity">   
+         <option value="0">Selecionar Cidade</option>             
+         <option ng-repeat="city in cityList | orderBy: 'name'" value="{{city.name}}">{{city.name}}</option>    
+    </select>     
+ </ion-view>

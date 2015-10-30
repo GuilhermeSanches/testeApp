@@ -14,6 +14,14 @@ angular.module("starter")
 	loadCities();              
 })
 
+.controller('CTRL', ['$scope', function($scope) {
+  $scope.templates =
+    [ { name: 'template-select', url: 'templates/_selectListCity.html'}
+ ];
+  $scope.template_select = $scope.templates[0];
+}])
+
+
 .controller("CtrlDevice", function($scope){
     
 
@@ -23,7 +31,8 @@ angular.module("starter")
     if(isIOS){
             
         $('#listCity').css({
-          "border-radius": "20px",         
+          "border-radius": "20px",   
+            "appearance": "none",
           "border": "1px solid white",
           "color": "white",
           "padding": "10px"
